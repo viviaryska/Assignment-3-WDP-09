@@ -165,11 +165,8 @@ function renderButton () {
 
 function clearData () {
     const spans = document.querySelectorAll('#result')
-    spans.forEach(span => {
-    span.remove()
-  })
+    spans.forEach(result => result.innerHTML = '')
 }
-//clear data bisa jalan, tapi harus refresh halaman kalo mau get data lagi, solusinya gimana ya kak biar bisa langsung get data lagi tanpa harus refresh halaman? *terimakasih jawabannya :D
 
 function fecthCovidData(){
     const options = {
