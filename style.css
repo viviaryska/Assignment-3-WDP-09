@@ -1,0 +1,118 @@
+html{
+    background-color: #4fbdba;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.main{
+    background-color: #35858b;
+    width: 550px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: #072227;
+    box-shadow: 6px 6px 12px #072227,
+               -6px -6px 12px #072227;
+}
+
+.input {
+    color: #4fbdba;
+    border: 2px solid #4fbdba;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: #072227;
+    max-width: 190px;
+}
+   
+.input:active {
+    box-shadow: 2px 2px 15px #4fbdba inset;
+}
+
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #aefeff;
+    margin: 5px;
+    padding: 0.7em 1.7em;
+    font-size: 12px;
+    border-radius: 10px;
+    background: #072227;
+    border: 1px solid #e8e8e8;
+}
+    
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #4fbdba;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:hover {
+    color: #ffffff;
+    border: 1px solid #072227;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color: #35858b;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: #35858b;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+  .content{
+    text-transform: capitalize;
+    margin: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+}
+.part{
+    background-color: #072227;
+    color: #aefeff;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
